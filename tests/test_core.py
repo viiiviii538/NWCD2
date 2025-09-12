@@ -7,4 +7,5 @@ from yourtool.core import run_scan
 
 
 def test_run_scan_returns_dict():
-    assert isinstance(run_scan("target"), dict)
+    result = run_scan("target")
+    assert isinstance(result, dict)
