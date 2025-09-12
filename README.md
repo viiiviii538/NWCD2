@@ -10,6 +10,16 @@ cd NWCD2
 pip install -r requirements.txt
 ```
 
+## セットアップ手順
+
+依存関係のインストールや仮想環境の作成は `setup.sh` で自動化されています。
+
+```bash
+./setup.sh
+```
+
+このスクリプトは Python 仮想環境の作成と pip の更新を行い、`requirements.txt` と `requirements-dev.txt` が存在すればそれらをインストールします。
+
 ## 5分で試す
 
 ```bash
