@@ -16,3 +16,4 @@ def test_cli_help_exits_zero():
         cwd=repo_root,
     )
     assert result.returncode == 0
+    assert b"usage: yourtool" in result.stdout

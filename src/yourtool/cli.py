@@ -24,8 +24,10 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     if args.command == "scan":
+        # run_scan returns a JSON-serialisable dict describing the scan
         result = run_scan(args.target)
-        print(json.dumps(result))
+        # ensure_ascii=False keeps non-ASCII targets readable in output
+        print(json.dumps(result, ensure_ascii=False))
         return 0
 
     parser.print_help()
