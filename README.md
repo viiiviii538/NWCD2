@@ -1,4 +1,5 @@
 # NWCD2
+[![CI](https://github.com/viiiviii538/NWCD2/actions/workflows/ci-hard.yml/badge.svg?branch=main)](https://github.com/viiiviii538/NWCD2/actions/workflows/ci-hard.yml)
 
 ネットワークのセキュリティ状況をチェックするツールです。簡単なコマンドで脆弱性や設定ミスを確認できます。
 
