@@ -22,6 +22,12 @@ python main.py --target example.com
 uvicorn yourtool.api:app --host 127.0.0.1 --port 8787
 ```
 
+### エンドポイント
+
+- `POST /scan`
+  - リクエスト: `{"target": "example.com"}`
+  - レスポンス: `{"status": "ok", "target": "example.com"}`
+
 ## 開発手順
 
 ### 依存関係のインストール
