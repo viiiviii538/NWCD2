@@ -16,6 +16,12 @@ pip install -r requirements.txt
 python main.py --target example.com
 ```
 
+## APIサーバーの起動
+
+```bash
+uvicorn yourtool.api:app --host 127.0.0.1 --port 8787
+```
+
 ## 開発手順
 
 ### 依存関係のインストール
